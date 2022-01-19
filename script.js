@@ -11,6 +11,9 @@ renderer.setSize( width, height );
 div.appendChild( renderer.domElement );
 //renderer constructor
 
+let ambient = new THREE.AmbientLight(0x191970, 0.7);
+scene.add(ambient);
+
 let spotlight = new THREE.SpotLight(0x6FA8DC);
 spotlight.position.set(80,1,100);
 scene.add(spotlight);
